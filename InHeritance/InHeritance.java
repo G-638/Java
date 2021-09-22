@@ -1,4 +1,3 @@
-package InHeritance;
 import java.util.Scanner;
 
 class Calculation {

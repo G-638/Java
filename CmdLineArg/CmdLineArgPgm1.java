@@ -1,4 +1,3 @@
-package CmdLineArg;
 public class CmdLineArgPgm1 {
     public static void main(String args[]) {
 

@@ -1,4 +1,3 @@
-package InHeritance;
 class Animal {
     void eat() {
         System.out.println("eating...");

@@ -1,4 +1,3 @@
-package CmdLineArg;
 public class CmdLineArg {
     public static void main(String args[]) {
         String name = System.getProperty("username");
