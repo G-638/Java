@@ -20,7 +20,7 @@ public class ExceptionHandlingEx1 {
 
     }
 
-    static int method() {
+    static boolean method() {
         try {
             Scanner in = new Scanner(System.in);
             int i = in.nextInt();
@@ -32,7 +32,7 @@ public class ExceptionHandlingEx1 {
             if (amt < 20) {
                 throw new InSufficientAmt(amt);
             }
-            return 0;
+            return true;
         } catch (InSufficientAmt e) {
             System.out.println(e.getAmount() + " InSufficient Amount");
         } catch (IllegalArgumentException e) {
@@ -42,7 +42,7 @@ public class ExceptionHandlingEx1 {
         } finally {
             System.out.println("Finally executed");
         }
-        return 1;
+        return false;
     }
 }
 
@@ -64,7 +64,7 @@ public class ExceptionHandlingEx1 {
     // Finally executed
     // 1
 
-    
+
 // Hints:-
 // ------
 

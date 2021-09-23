@@ -20,8 +20,8 @@ public class ExceptionHandlingEx3 {
 }
 
 //Output: 
-// Inside the method()
-// java.lang.ArithmeticException: throwing ArithmeticException
-// 	at Parent.method(ExceptionHandlingEx3.java:4)
-// 	at ExceptionHandlingEx3.main(ExceptionHandlingEx3.java:12)
-// Something went wrong
+    // Inside the method()
+    // java.lang.ArithmeticException: throwing ArithmeticException
+    // 	at Parent.method(ExceptionHandlingEx3.java:4)
+    // 	at ExceptionHandlingEx3.main(ExceptionHandlingEx3.java:12)
+    // Something went wrong
