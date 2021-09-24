@@ -1,29 +1,32 @@
-class Animal {
-    void eat() {
-        System.out.println("Parent Animal");
+class First{
+    public void DisplayFirst(){
+        System.out.println("Display First Method");   
+    }
+}
+interface InterfaceB 
+{
+    public void show();
+}
+interface InterfaceC 
+{
+    public void show();
+}
+public class HybridInheritance extends First implements InterfaceB,InterfaceC {
+    public void show(){
+        System.out.println("Display show() method");
+    }
+    public void DisplayHybrid(){
+        System.out.println("Display Hybrid method");
+    }
+    public static void main(String[] args) {
+        HybridInheritance obj = new HybridInheritance();
+        obj.DisplayFirst();
+        obj.show();
+        obj.DisplayHybrid();
     }
 }
 
-class Dog extends Animal {
-    void bark() {
-        System.out.println(" Animal dog sounds barking");
-    }
-}
-
-class Cat extends Animal {
-    void meow() {
-        System.out.println("Animal cat sounds meow");
-    }
-}
-
-class HybridInheritance {
-    public static void main(String args[]) {
-        Cat c = new Cat();
-        c.meow();
-        c.eat();
-        Dog d = new Dog();
-        d.bark();;
-        d.eat();
-        // c.bark(); //C.T.Error
-    }
-}
+//output: 
+// Display First Method
+// Display show() method
+// Display Hybrid method
