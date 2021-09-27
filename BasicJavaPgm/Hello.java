@@ -13,10 +13,12 @@ class Hello {
     }
 
     public static void main(String args[]) {
-        myStaticMethod(); // for accessing static methods , no need to creatig objects
+        // for accessing static methods , no need to creatig objects
+        myStaticMethod(); 
         int x = 5;
         System.out.println(x);
-        System.out.println(a); // for accessing static variables , no need to creatig objects
+        // for accessing static variables , no need to creatig objects
+        System.out.println(a); 
         Hello myObj = new Hello(); 
         myObj.myPublicMethod();
         System.out.println(myObj.x);

@@ -4,7 +4,7 @@ public class ExceptionHandlingEx2 {
         try{
             System.out.println(a[1]); 
             try{
-                System.out.println(a[2]);  // a[2] 
+                System.out.println(a[2]);
             }
             catch(ArrayIndexOutOfBoundsException e){
                 System.out.println("Exception thrown :" + e); 
@@ -13,8 +13,9 @@ public class ExceptionHandlingEx2 {
                 System.out.println("Inner finally block executed"); 
             }
         }
+        // catch exception of both try blocks(Inner, Outer)
         catch(ArrayIndexOutOfBoundsException e){
-            System.out.println("Exception thrown :" + e); // catch exception of both try blocks(Inner, Outer)
+            System.out.println("Exception thrown :" + e); 
         }
         finally{
             System.out.println("Outer finally block executed"); 

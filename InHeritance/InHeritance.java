@@ -33,6 +33,7 @@ class InHeritance extends Calculation {
     }
 }
 
+// Hints:
 // Types Of Inheritance: 
 // 1. single( B -> A)
 // 2. multilevel ( C -> B -> A)

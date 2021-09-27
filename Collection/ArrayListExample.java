@@ -16,7 +16,7 @@ public class ArrayListExample {
         ll.add("Bank");
         ls.add("Employee");
 
-        //sort list using collection
+        //sort list using collections
         Collections.sort(ls);
         for(String AnyBank: ls){
             System.out.println(AnyBank);
@@ -26,18 +26,19 @@ public class ArrayListExample {
             System.out.println("list:" +a);  
           });
 
-    // Vector -- synchronized one( accessing=( searching, adding, delete and update) is not faster )
-        Vector<String> vec = new Vector<String>(2); // size 2 
+        // Vector -- synchronized one( accessing=( searching, adding, delete and update) is not faster )
+        Vector<String> vec = new Vector<String>(2);
         vec.addElement("Apple");
         vec.addElement("Orange");
         vec.addElement("banana");
-
-        System.out.println(vec.capacity());  // double its capacity 4
+        // double its capacity 4  
+        System.out.println(vec.capacity());  
         System.out.println(vec.size()); 
 
         vec.addElement("Sapota");
         vec.addElement("grapes");;
         System.out.println(vec.size());
-        System.out.println(vec.capacity()); // double its capacity. 8
+        //  double its capacity. 8
+        System.out.println(vec.capacity()); 
     }
 }

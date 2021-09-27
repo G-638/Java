@@ -1,6 +1,7 @@
 class OuterClass {
   int x = 10;
-  protected class InnerClass {  // class have protected access.
+  // class have protected access.
+  protected class InnerClass {  
     int y = 5;
   }
 }

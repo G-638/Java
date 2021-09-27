@@ -4,13 +4,16 @@ class Operation {
     }
 }
 
-class Aggregation { // circle
-    Operation op; // Aggregation
+// caluculate circle radius 
+class Aggregation { 
+    // Aggregation
+    Operation op; 
     double pi = 3.14;
 
     double area(int radius) {
         op = new Operation();
-        int rsquare = op.square(radius);// code reusability (i.e. delegates the method call).
+        // code reusability (i.e. delegates the method call).
+        int rsquare = op.square(radius);
         return pi * rsquare;
     }
 
@@ -21,11 +24,12 @@ class Aggregation { // circle
     }
 }
 
+// Hint:-
 // Aggregation: 
 // --------------
 // class Employee{  
 //     int id;  
 //     String name;  
-//     Address address;    //Address is a class  ---> city, state, country, zipcode etc. 
+//     Address address;    // "Address" is a class  ---> city, state, country, zipcode etc. 
 //     ...  
 //     }  

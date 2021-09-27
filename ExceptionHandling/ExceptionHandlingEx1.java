@@ -1,7 +1,8 @@
 import java.util.Scanner;
 
 //Custom Exception
-class InSufficientAmt extends Throwable { // Thrwoable (Or) Exception use any one to create user defined exception.
+//use Thrwoable (Or) Exception kw use any one to create user defined exception.
+class InSufficientAmt extends Throwable { 
     private double amount;
 
     public InSufficientAmt(double amount) {
@@ -37,7 +38,8 @@ public class ExceptionHandlingEx1 {
             System.out.println(e.getAmount() + " InSufficient Amount");
         } catch (IllegalArgumentException e) {
             e.printStackTrace();
-        } catch (Exception e) { // Common Exception must be at last
+        } 
+        catch (Exception e) { 
             e.printStackTrace();
         } finally {
             System.out.println("Finally executed");

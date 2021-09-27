@@ -1,7 +1,10 @@
-interface car extends Tesla{    
-    String carNmae = "Maruthi"; //public static final int carName = "Maruthi";
+interface car extends Tesla{  
+    
+    //public static final int carName = "Maruthi";
+    String carNmae = "Maruthi"; 
     public void BMW(String model);  
-    void Hyundai(String model);    // public abstract void Hyundai(String model);
+    // public abstract void Hyundai(String model);
+    void Hyundai(String model);    
 
     default void m2(){
         System.out.println("Default method");

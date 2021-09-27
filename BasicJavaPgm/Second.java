@@ -1,8 +1,11 @@
 class Second extends First {
     public static void main(String[] args) {
-      First myCar = new First();     // Create a myCar object
-      myCar.fullThrottle();      // Call the fullThrottle() method
-      myCar.speed(200);          // Call the speed() method
+      // Create a myCar object
+      First myCar = new First();     
+      // Call the fullThrottle() method
+      myCar.fullThrottle();      
+      // Call the speed() method
+      myCar.speed(200);          
       System.out.println(name);
     }
   }

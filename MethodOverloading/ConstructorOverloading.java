@@ -11,9 +11,12 @@ class Ab {
     public Ab(int a, int b) {
         this.a = a;
         this.b = b;
-        System.out.println("" + a + " " + b); // here + act as concat operation
-        System.out.println(a+b); // here + act as addition operation
-        System.out.printf("%d %d\n", a, b); // using format specifier to display
+        // here + act as concat operation
+        System.out.println("" + a + " " + b); 
+        // here + act as addition operation
+        System.out.println(a+b); 
+        // using format specifier to display
+        System.out.printf("%d %d\n", a, b); 
     }
 
 }
