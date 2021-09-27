@@ -36,7 +36,8 @@ public class AbstractClass  {
         obj.total();
         obj.sample();
         //  A obj1 = new  A();   // cannot create Instance of abstract class 
-        A obj1 = new B() ; // only create reference of the abstract class
+        // only create reference of the abstract class
+        A obj1 = new B() ; 
         obj1.sum(30);
         obj1.total();
         obj1.sample();
