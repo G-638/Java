@@ -10,7 +10,9 @@ public class ArrayListExample {
         Iterator itr = ls.iterator();
         while(itr.hasNext()){
             System.out.println(itr.next());
+            itr.remove();
         }
+        System.out.println(ls);
         //LinkedList
         LinkedList<String> ll = new LinkedList<String>();   
         ll.add("Bank");
@@ -21,8 +23,8 @@ public class ArrayListExample {
         for(String AnyBank: ls){
             System.out.println(AnyBank);
         }
-
-        ls.forEach(a->{ //Here, we are using lambda expression  
+        //Here, we are using lambda expression 
+        ls.forEach(a->{  
             System.out.println("list:" +a);  
           });
 

@@ -1,0 +1,182 @@
+
+Iterator(util class) <--- Iterable(lang class) - {
+    func()
+        -hasNext
+        -next 
+        -remove
+        -forEachRemaining
+}
+
+I. Collection extends Iterable  => 
+
+1. List -ArrayList, LinkedList, vector.
+2. Set - HashSet, LinkedHashSet, TreeSet.
+3. Queue - 
+
+
+II. Map - HashMap, TreeMap, LinkedHashMap, HashTable
+
+
+ List  = 
+ 
+ 1. ArrayList: extends AbstractList implements List ,RandomAccess, Clonable, Serializable
+
+          * ordered Collection(sequence).
+          * contain duplicate elements
+          * Elements can be inserted or accessed by their position in the list, using a zero-based index.
+
+          *'Arraylist' class "implements" 'List' interface , 
+          * Array data structure    
+          * Resizable-array implementation of the List interface
+
+          * ArrayList can dynamically grow and shrink .
+
+
+          * Methods:
+            - add()
+            - add(index,value)
+            - size
+            - remove(index or value)
+            - Collections.sort(listName);
+
+
+2. linkedlist: extends AbstractSequentialList implements List ,Deque, Clonable, Serializable
+
+        * LinkedList is a linear data structure. 
+        * not stored in contiguous locations like arrays.
+
+        * Head - contains the Address of the First element of the List.
+        * lastElement - null pointer.
+        * Singly and Doubly LinkedList.
+
+        DrawBack of Array : 
+                -Size of the array is fixed
+                - need contiguous memory locations
+                - Inserting an element in an array is performance wise expensive 
+
+        Advantage of LL:
+                -  dynamic memory allocation
+                - don’t need contiguous memory location
+
+        * Methods
+                - add()
+                - addFirst()
+                - addLast()
+                - remove(
+                - removeFirst()
+                - removeLast()
+                - addAll()
+                - clone()
+                - clear
+                - get(index)
+                - getFirst()
+                - getLast()
+                - poll()
+                - pollFirst() and pollLast()
+                - size
+                - set(index, value)  -> update existing value
+
+
+
+3. vector - extends AbstractList implements List ,RandomAccess, Clonable, Serializable
+                
+                * Vector implements List Interface
+                * Like ArrayList it also maintains insertion order
+                * it is synchronized and due to which it gives poor performance in searching, adding, delete and update of its elements
+
+                //Vector vec = new Vector();
+                //Vector vec = new Vector(3);
+                //     Vector vec= new Vector(4, 6) 
+
+                * Methods:-
+                        - addElement()
+                        - capacity()
+                         - size 
+                         - ...
+                        - ...
+
+
+
+Set:
+----
+HashSet ->  doesn’t maintain any kind of order of its elements.
+TreeSet - >sorts the elements in ascending order.
+LinkedHashSet ->  maintains the insertion order. Elements gets sorted in the same sequence in which they have been added to the Set.
+-----
+ 1. HashSet - extends AbstractSet implements Set, Clonable,Serializable
+
+              * HashSet doesn’t maintain any order,the elements would be returned in any random order.
+              * HashSet doesn’t allow duplicates, if duplicates occur old value would be overwritten.
+              * HashSet allows null values, if more than one null -> still return only one null value.
+              * HashSet is non-synchronized
+              * if HashSet has been modified after creation of iterator - >  (ConcurrentModificationException) except iterator’s own remove method.
+
+        * Methods: 
+                - add(e)
+                - clear
+                - clone 
+                - contain
+                - isEmpty
+                - size
+
+
+
+ 2. LinkedHashSet - extends HashSet implements Set, Clonable,Serializable
+
+        * maintains the insertion order. 
+        * Elements gets sorted in the same sequence in which they have been added to the Set.
+        * it is similar to the HashSet and TreeSet.
+
+
+
+ 3. TreeSet - extends AbstractSet implements NavigableSet, Clonable,Serializable
+        * TreeSet is similar to HashSet, except that it sorts the elements in the ascending order 
+        * TreeSet allows null element and not synchronised.
+
+
+
+ Map:
+----
+HashMap ->  doesn’t maintain any order.
+TreeMap -> sort the entries in ascending order of keys.
+LinkedHashMap -> maintains the insertion order.
+ ----
+
+1. HashMap - extends  implements Map,Clonable,Serializable
+
+        *  is used for storing Key & value pairs,
+        * no guarantees as to the order of the map.
+        * It is similar to the Hashtable class except that it is unsynchronized and permits nulls(null values and null key).
+        * It is not an ordered collection (does not return the keys and values in the same order)
+
+        - Methods: 
+                - put(index, value)
+                - boolean containKey(key)      
+                - boolean containValue(value).
+                - value get(key) -> value.
+                - keySet -> return all keys.
+                - Collection values - > return all values in map.
+                - putAll -> copy all elements of the map.
+                - clone -> copy all mapping of the map.
+
+
+2. TreeMap - extends AbstarctMap implements NavigableMap, Clonable,Serializable
+
+        * It is sorted according to the natural ordering of its keys.
+        *  HashMap is an unordered collection, while TreeMap is sorted in the ascending order of its keys.
+
+
+3. LinkedHashMap - extends HashMap implements Map
+
+        * LinkedHashMap is a Hash table and linked list implementation of the Map interface.
+        * This linked list defines the iteration ordering, which is normally the order in which keys were inserted into the map (insertion-order)
+
+4. HashTable  - extends Dictionary implements Map, Clonable,Serializable
+
+        * Any non-null object can be used as a key or as a value. 
+        * Hashtable is similar to HashMap except it is synchronized
+
+
+
+
+
